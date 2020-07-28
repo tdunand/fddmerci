@@ -10,7 +10,7 @@ var itemPresent = ikContext.account.transactionLines.find(function(line) {
 });
 
 if (!itemPresent) {
-    output.rewards.push({
+    output.rewards.unshift({
         type: "ADD",
         sku: sku,
         insertionPhase:0
